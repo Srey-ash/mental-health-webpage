@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Global styles */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #009688; 
+  }
+  
+  .banner {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .logo {
+    width: 180px;
+    height: auto;
+  }
+  
+  li.pointer {
+    cursor: pointer;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-right: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+  
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s ease;
+  }
+  
+  .navbar ul li:hover:after{
+    width: 100%;
+  }
+  
+  .cta-button {
+    background-color: #009688;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00796b;
+  }
+  
+  .login-btn {
+    background-color: #009688;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #00796b;
+  }
+  
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  body {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .content {
+    font-family: 'Open Sans', sans-serif;
+  }
+.content h1{
+      font-size: 70px;
+      margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.check-btn {
+    background-color: #fff;
+    border: 2px solid #009688;
+    color: #009688;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  .check-btn:hover {
+    background-color: #009688;
+    color: #fff;
+  }
+
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+    background-color: #009688; 
+}
+.footer {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease; /* add transition */
+}
+
+.footer__menu {
+    display: flex;
+    list-style: none;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease; /* add transition */
+}
+
+.footer__menu-item {
+    margin-right: 1rem;
+    transition: all 0.3s ease; /* add transition */
+}
+
+.footer__menu-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.footer__menu-link:hover {
+    color: #009688;
+    transition: all 0.2s ease;
+}
+
+.footer__social-icons {
+    display: flex;
+    transition: all 0.3s ease; /* add transition */
+}
+
+.footer__social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    transition: all 0.3s ease; /* add transition */
+}
+
+.footer__social-icon-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.footer__social-icon-link:hover {
+    background-color: #009688;
+    transition: all 0.2s ease;
+}
+
+.footer__copy {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+    transition: all 0.3s ease; /* add transition */
+}
+
+
+@media screen and (max-width: 767px) {
+  /* adjust layout for smaller screens */
+  .header {
+    height: 60px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-toggle:hover {
+    background-color: #333;
+  }
+  .nav-toggle span {
+    background-color: #fff;
+  }
+  .nav-list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 999;
+    display: none;
+  }
+  .nav-list li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .nav-list li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+  }
+  .nav-list li a:hover {
+    color: #ff0;
+  }
+  /* adjust content for smaller screens */
+  .content {
+    padding: 20px;
+  }
+}
+
+/* hover effects */
+a:hover {
+  color: #ff0;
+}
+
+/* CSS transitions */
+.check-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.check-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* sticky header */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* font loader */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('customfont.woff2') format('woff2'),
+       url('customfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+  
+  @media screen and (min-width: 1024px) {
+  }
+  
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        margin-top: 1rem;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo {
+        width: 80px;
+    }
+}
